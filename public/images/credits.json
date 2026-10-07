@@ -1,0 +1,49 @@
+{
+ "note": "Unsplash IDs of placeholder images (Unsplash License)",
+ "photos": {
+  "misal-dip": "photo-1619193099710-e54f2e2f1b28",
+  "misal-top": "photo-1606491956391-70868b5d0f47",
+  "vada-pav": "photo-1631451457509-454a498df1c0",
+  "street-chef": "photo-1589778314823-d1c2bde0a31b",
+  "tandoor-cook": "photo-1763951718950-c536b1295213",
+  "roti": "photo-1780907084884-ded9fddbb474",
+  "chai-hands": "photo-1680413002471-965cca788f5b",
+  "chai-kulhad": "photo-1630748662359-40a2105640c7",
+  "masala-dabba": "photo-1656497119922-068c6a5e1193",
+  "marigold-heap": "photo-1699764681875-dd04ce36b1c3",
+  "audience": "photo-1758939559245-3bda75f02992",
+  "seat-23": "photo-1513106580091-1d82408b8cd6",
+  "seats-row": "photo-1581785735604-419514e6099e",
+  "old-hall": "photo-1485095329183-d0797cdc5676",
+  "popcorn-machine": "photo-1620177088260-a9150572baf4",
+  "popcorn-boxes": "photo-1585647347483-22b66260dfff",
+  "projectors-vintage": "photo-1440404653325-ab127d49abc1",
+  "film-reels": "photo-1568876694728-451bbf694b83",
+  "dal": "photo-1736680056444-02b10f16a245",
+  "seats-aisle": "photo-1489599849927-2ee91cede3ba",
+  "thali-festive": "photo-1589778655375-3e622a9fc91c",
+  "paneer-sizzler": "photo-1567188040759-fb8a883dc6d8",
+  "paneer-masala": "photo-1631452180519-c014fe946bc7",
+  "paneer-curry": "photo-1631452180539-96aca7d48617",
+  "pakora": "photo-1613764816537-a43baeb559c1",
+  "dosa": "photo-1743517894265-c86ab035adef",
+  "chole-bhature": "photo-1717587052948-fb9825de50f8",
+  "jalebi": "photo-1621334721541-370a13974de8",
+  "thali-veg": "photo-1546833999-b9f581a1996d"
+ },
+ "deco": {
+  "spice-scatter": "photo-1615485290671-1782f96bb302",
+  "cinnamon": "photo-1587131782738-de30ea91a542",
+  "chilli": "photo-1579499006871-bf87169b2487",
+  "chillies": "photo-1587374374607-6ef85072f88a",
+  "peppercorns": "photo-1708106906868-cd7bfc234e2c",
+  "popcorn-kernel": "photo-1587132129911-80e544e7e7b9",
+  "popcorn-bucket": "photo-1691480213129-106b2c7d1ee8",
+  "chilli-trio": "photo-1585849835068-7455c83ee8b4"
+ },
+ "videos": {
+  "note": "Pexels License and Pixabay Content License (both free for commercial use, no attribution required)",
+  "cinema": "https://www.pexels.com/video/an-empty-movie-theater-7988642/",
+  "restaurant": "https://pixabay.com/videos/restaurant-buffet-cuisine-dinner-1192/ (edited: seafood, wine-cooler and third-party branding shots removed)"
+ }
+}

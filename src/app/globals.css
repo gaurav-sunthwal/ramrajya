@@ -1,26 +1,117 @@
 @import "tailwindcss";
 
+/* Ramrajya — warm paper, ink, kumkum red, marigold. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --paper: #f3ece0;
+  --paper-deep: #e9dfcc;
+  --ink: #1d1813;
+  --ink-soft: #51463b;
+  --night: #100d0a;
+  --kumkum: #b8321c;
+  --marigold: #e5891a;
+  --turmeric: #e2b33a;
+  --leaf: #7a9a45;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-paper: var(--paper);
+  --color-paper-deep: var(--paper-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-night: var(--night);
+  --color-kumkum: var(--kumkum);
+  --color-marigold: var(--marigold);
+  --color-turmeric: var(--turmeric);
+  --color-leaf: var(--leaf);
+  --font-display: var(--font-bodoni);
+  --font-sans: var(--font-manrope);
+  --font-deva: var(--font-tiro);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  background: var(--paper);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  color: var(--ink);
+  font-family: var(--font-manrope), system-ui, sans-serif;
+  font-size: 0.975rem;
+  font-weight: 300;
+  letter-spacing: 0.005em;
+  /* Paper: fine fibre grain over soft mottling, like an uncoated menu card. */
+  background-color: var(--paper);
+  background-image:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.35 0 0 0 0 0.28 0 0 0 0 0.2 0 0 0 0.09 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='900' height='900'%3E%3Cfilter id='m'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.004' numOctaves='4' seed='7'/%3E%3CfeColorMatrix values='0 0 0 0 0.55 0 0 0 0 0.45 0 0 0 0 0.3 0 0 0 0.16 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23m)'/%3E%3C/svg%3E");
+}
+
+/* Bodoni Moda: let the optical-size axis follow font-size so large headings get hairline contrast. */
+.font-display {
+  font-optical-sizing: auto;
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* The one label style used site-wide: small, spaced capitals. */
+.label {
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+}
+
+/* Custom cursor (mouse/trackpad only): hide the system pointer while ours is mounted. */
+html.custom-cursor,
+html.custom-cursor * {
+  cursor: none !important;
+}
+
+::selection {
+  background: var(--marigold);
+  color: var(--night);
+}
+
+section[id] {
+  scroll-margin-top: 4rem;
+}
+
+/* Stock cut-outs shot on white: feather the edges; the wrapper multiplies them into the paper. */
+.cutout {
+  filter: brightness(1.07) contrast(1.12) saturate(1.05);
+  -webkit-mask-image: radial-gradient(closest-side, #000 72%, transparent);
+  mask-image: radial-gradient(closest-side, #000 72%, transparent);
+}
+
+/* Lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@keyframes reel {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-reel {
+  animation: reel 70s linear infinite;
+}
+.animate-reel:hover {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
